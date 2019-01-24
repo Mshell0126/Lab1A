@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Lab1A"
+    tools:showIn="@layout/activity_lab1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/counterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/incrementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="incrementButton"
+            android:text="@string/incrementButton" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="decrementButton"
+            android:text="@string/decrementButton" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
